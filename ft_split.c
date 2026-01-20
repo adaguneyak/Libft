@@ -6,12 +6,11 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 12:24:09 by adak              #+#    #+#             */
-/*   Updated: 2026/01/19 22:08:01 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/20 16:30:07 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	countword(char const *s, char c)
 {

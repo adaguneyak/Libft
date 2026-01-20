@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 13:19:52 by adak              #+#    #+#             */
-/*   Updated: 2026/01/19 20:38:26 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/20 16:34:38 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,9 +56,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 // #include <stdio.h>
 // int main(void)
 // {
-// 	char *s1 = "             merhaba          ";
-// 	char *set = " ";
+// 	char *s1 = "          !!!!!!hello world";
+// 	char *set = "";
 // 	char *result;
 // 	result = ft_strtrim(s1,set);
 // 	printf("%s", result);
+// 	free(result);
 // }
