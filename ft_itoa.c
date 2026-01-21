@@ -6,24 +6,22 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 07:00:26 by adak              #+#    #+#             */
-/*   Updated: 2026/01/18 14:46:09 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/21 18:35:40 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count(int x)
+int	intlen(int x)
 {
-	int	tmp;
 	int	i;
 
-	tmp = x;
 	i = 0;
 	if (x < 0)
 		i++;
-	while (tmp)
+	while (x)
 	{
-		tmp = tmp / 10;
+		x = x / 10;
 		i++;
 	}
 	return (i);
@@ -34,7 +32,7 @@ char	*ft_itoa(int n)
 	char	*res;
 	int		size;
 
-	size = count(n);
+	size = intlen(n);
 	res = malloc(sizeof(char) * (size + 1));
 	if (!res)
 		return (NULL);
@@ -61,5 +59,5 @@ char	*ft_itoa(int n)
 // #include <stdio.h>
 // int main(void)
 // {
-// 	printf("%s", ft_itoa(-99));
+// 	printf("%s", ft_itoa(99));
 // }

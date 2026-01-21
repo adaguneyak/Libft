@@ -1,36 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/21 14:17:20 by adak              #+#    #+#             */
-/*   Updated: 2026/01/21 14:17:20 by adak             ###   ########.fr       */
+/*   Created: 2026/01/21 20:51:46 by adak              #+#    #+#             */
+/*   Updated: 2026/01/21 20:51:46 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (new == NULL)
+	if (!lst || !del)
 		return ;
-	new->next = *lst;
-	*lst = new;
+	del(lst->content);
+	free(lst);
 }
+
 // #include <stdio.h>
 // int main (void)
 // {
-// 	char lou[] = "merhaba";
-// 	char ada[] = "nasilsiniz";
-// 	t_list *place;
-// 	t_list *place2;
-// 	place = ft_lstnew(lou);
-// 	place2 = ft_lstnew(ada);
-// 	printf("%s\n", (char *)place->content);
-// 	printf("%s\n", (char *)place2->content);
-// 	ft_lstadd_front(&place2,place);
-// 	printf("%s\n",(char *)place->content);
-// 	printf("%s\n", (char *)place->next->content);
+// 	t_list *YETER;
+// 	char *lou = ft_strdup("niquation");
+// 	YETER = ft_lstnew(lou);
+// 	ft_lstdelone(YETER,&free);
+// 	printf("%s", lou);
 // }

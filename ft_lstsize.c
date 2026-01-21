@@ -1,36 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/21 14:17:20 by adak              #+#    #+#             */
-/*   Updated: 2026/01/21 14:17:20 by adak             ###   ########.fr       */
+/*   Created: 2026/01/21 14:55:41 by adak              #+#    #+#             */
+/*   Updated: 2026/01/21 14:55:41 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+int	ft_lstsize(t_list *lst)
 {
-	if (new == NULL)
-		return ;
-	new->next = *lst;
-	*lst = new;
+	int		i;
+	t_list	*temp;
+
+	i = 0;
+	temp = lst;
+	while (temp)
+	{
+		i++;
+		temp = temp->next;
+	}
+	return (i);
 }
 // #include <stdio.h>
-// int main (void)
+// int main(void)
 // {
-// 	char lou[] = "merhaba";
-// 	char ada[] = "nasilsiniz";
 // 	t_list *place;
-// 	t_list *place2;
+// 	char lou[] = "bonjour";
+// 	char ada[] = "beybi";
+// 	char loux[] = "coucou";
 // 	place = ft_lstnew(lou);
-// 	place2 = ft_lstnew(ada);
-// 	printf("%s\n", (char *)place->content);
-// 	printf("%s\n", (char *)place2->content);
-// 	ft_lstadd_front(&place2,place);
-// 	printf("%s\n",(char *)place->content);
-// 	printf("%s\n", (char *)place->next->content);
+// 	ft_lstadd_front(&place,ft_lstnew(ada));
+// 	printf("%d", ft_lstsize(place));
 // }
