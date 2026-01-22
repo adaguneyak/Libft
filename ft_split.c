@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 12:24:09 by adak              #+#    #+#             */
-/*   Updated: 2026/01/21 18:36:11 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/22 15:00:11 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,7 +109,7 @@ char	**ft_split(char const *s, char c)
 // int main(void)
 // {
 // 	char **rest;
-// 	char str[] = "       merhaba oer huseyin              ada ak spliti";
+// 	char str[] = "       merhaba oer huseyin              ada  spliti";
 // 	int i = 0;
 // 	rest = ft_split(str,' ');
 // 	while (rest[i])

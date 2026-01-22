@@ -1,35 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/20 17:33:54 by adak              #+#    #+#             */
-/*   Updated: 2026/01/22 09:06:24 by adak             ###   ########.fr       */
+/*   Created: 2026/01/22 11:20:41 by adak              #+#    #+#             */
+/*   Updated: 2026/01/22 11:30:52 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list	*nnode;
-
-	nnode = malloc(sizeof(t_list));
-	if (!nnode)
-		return (NULL);
-	nnode->content = content;
-	nnode->next = NULL;
-	return (nnode);
+	if (!lst || !f)
+		return ;
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
-
-// #include <stdio.h>
-// int main (void)
-// {
-// 	char lou[] = "merhaba";
-// 	t_list	*ada;
-// 	ada = ft_lstnew(lou);
-// 	printf("%s",(char *) ada->content);
-// 	free(ada);
-// }

@@ -29,16 +29,19 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 // #include <stdio.h>
 // int main(void)
 // {
-// 	char lou[] = "bonjour";
-// 	char ada[] = "coucou";
+// 	char lou[] = "merhaba";
+// 	char ada[] = "naber";
 // 	char boris[] = "good";
-// 	char vian[] = "wesh";
-// 	char lepain[] ="jetaimeloutupeuxpasmembeter"; 
-// 	t_list	*jnmarre;
-// 	jnmarre = ft_lstnew(lou);
-// 	ft_lstadd_front(&jnmarre,ft_lstnew(ada));
-// 	ft_lstadd_front(&jnmarre,ft_lstnew(boris));
-// 	ft_lstadd_front(&jnmarre,ft_lstnew(vian));
-// 	ft_lstadd_back(&jnmarre,ft_lstnew(lepain));
-// 	printf("%s", (char *)ft_lstlast(jnmarre)->content);
+// 	char vian[] = "nasilsin";
+// 	char lepain[] ="bitsinbucile"; 
+
+// 	t_list	*node;
+
+// 	node = ft_lstnew(lou);
+// 	ft_lstadd_front(&node,ft_lstnew(ada));
+// 	ft_lstadd_front(&node,ft_lstnew(boris));
+// 	ft_lstadd_front(&node,ft_lstnew(vian));
+// 	ft_lstadd_back(&node,ft_lstnew(lepain));
+// 	printf("%s", (char *)ft_lstlast(node)->content);
+// 	free(node);
 // }

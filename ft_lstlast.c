@@ -29,11 +29,11 @@ t_list	*ft_lstlast(t_list *lst)
 // int main (void)
 // {
 // 	t_list *node;
-// 	char lou[] = "bonjour";
-// 	char ada[] = "coucou";
-// 	char borix[] = "cava";
-// 	char kevin[] = "hojackborseman";
-// 	char vav[] = "tumaimes?";
+// 	char lou[] = "merhaba";
+// 	char ada[] = "selam";
+// 	char borix[] = "naber";
+// 	char kevin[] = "spiderman";
+// 	char vav[] = "hoscakal";
 // 	node = ft_lstnew(lou);
 // 	printf("%s\n",(char *) node->content);
 // 	ft_lstadd_front(&node,ft_lstnew(ada));

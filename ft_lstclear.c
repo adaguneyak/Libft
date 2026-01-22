@@ -36,8 +36,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 // 	char *huseyin;
 // 	char *bojack;
 
-// 	ada = ft_strdup("bonjour");
-// 	lou = ft_strdup("coucou");
+// 	ada = ft_strdup("merhaba");
+// 	lou = ft_strdup("naber");
 // 	huseyin = ft_strdup("x");
 // 	bojack = ft_strdup("harika");
 
