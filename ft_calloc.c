@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 17:06:49 by adak              #+#    #+#             */
-/*   Updated: 2026/01/15 15:08:53 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/23 14:42:00 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,13 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*ptr;
 	size_t	len;
 
+	if (size != 0 && nmemb > (size_t)-1 / size)
+		return (NULL);
 	len = nmemb * size;
 	ptr = malloc(len);
 	if (!ptr)
 		return (NULL);
-	ft_bzero (ptr, len);
+	ft_bzero(ptr, len);
 	return (ptr);
 }
 
