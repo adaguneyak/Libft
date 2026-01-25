@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 17:33:54 by adak              #+#    #+#             */
-/*   Updated: 2026/01/22 09:06:24 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/25 20:01:32 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*nnode;
 
-	nnode = malloc(sizeof(t_list));
+	nnode = (t_list *) malloc(sizeof(t_list));
 	if (!nnode)
 		return (NULL);
 	nnode->content = content;
