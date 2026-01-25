@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 07:00:26 by adak              #+#    #+#             */
-/*   Updated: 2026/01/21 18:35:40 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/25 17:41:07 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,13 @@ char	*ft_itoa(int n)
 	int		size;
 
 	size = intlen(n);
-	res = malloc(sizeof(char) * (size + 1));
-	if (!res)
-		return (NULL);
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	if (n == 0)
 		return (ft_strdup("0"));
+	res = malloc(sizeof(char) * (size + 1));
+	if (!res)
+		return (NULL);
 	res[size] = '\0';
 	if (n < 0)
 	{
@@ -59,5 +59,5 @@ char	*ft_itoa(int n)
 // #include <stdio.h>
 // int main(void)
 // {
-// 	printf("%s", ft_itoa(99));
+// 	printf("%s", ft_itoa(0));
 // }

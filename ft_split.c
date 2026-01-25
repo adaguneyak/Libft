@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 12:24:09 by adak              #+#    #+#             */
-/*   Updated: 2026/01/22 15:00:11 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/25 17:48:55 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,16 +64,13 @@ static char	**freetab(char **tab)
 	int	i;
 
 	i = 0;
-	if (tab)
+	while (tab[i])
 	{
-		while (tab[i])
-		{
-			if (tab[i])
-				free (tab[i]);
-			i++;
-		}
-		free(tab);
+		if (tab[i])
+			free (tab[i]);
+		i++;
 	}
+	free(tab);
 	return (NULL);
 }
 
@@ -92,7 +89,7 @@ char	**ft_split(char const *s, char c)
 	{
 		while (s[j] == c && s[j])
 			j++;
-		if (s[j] != c)
+		if (s[j] != c && s[j])
 		{
 			tab[i] = ft_strldup(s + j, c);
 			if (!tab[i++])
@@ -109,9 +106,10 @@ char	**ft_split(char const *s, char c)
 // int main(void)
 // {
 // 	char **rest;
-// 	char str[] = "       merhaba oer huseyin              ada  spliti";
+// 	char str[] = "          yeter artik husey     in pesimi bi    rak " ;
 // 	int i = 0;
 // 	rest = ft_split(str,' ');
+// 	rest[7]  = NULL;
 // 	while (rest[i])
 // 		{
 // 			printf("%s\n",rest[i]);

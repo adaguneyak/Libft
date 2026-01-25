@@ -34,6 +34,7 @@ int	ft_lstsize(t_list *lst)
 // 	char ada[] = "naber";
 // 	char loux[] = "nasilsin";
 // 	place = ft_lstnew(lou);
+
 // 	ft_lstadd_front(&place,ft_lstnew(ada));
 // 	printf("%d", ft_lstsize(place));
 // }
