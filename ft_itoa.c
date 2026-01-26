@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 07:00:26 by adak              #+#    #+#             */
-/*   Updated: 2026/01/25 17:41:07 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/26 11:06:56 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,5 +59,8 @@ char	*ft_itoa(int n)
 // #include <stdio.h>
 // int main(void)
 // {
-// 	printf("%s", ft_itoa(0));
+// 	char *tab;
+// 	tab = ft_itoa(0);
+// 	printf("%s", tab);
+// 	free(tab);
 // }
