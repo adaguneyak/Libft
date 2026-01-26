@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 17:08:54 by adak              #+#    #+#             */
-/*   Updated: 2026/01/19 12:23:47 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/26 13:49:23 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,19 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n % 10, fd);
 	}
 }
-
 // #include <fcntl.h>
-// int main (void)
+// int main(void)
 // {
 // 	int fd;
-// 	fd = open("deneme.txt", O_CREAT | O_WRONLY , 777);
-// 	ft_putnbr_fd(42,fd);
+// 	fd = open("de.txt", O_CREAT | O_WRONLY , 0777);
+// 	ft_putnbr_fd(-42,fd);
+// 	ft_putchar_fd('\n',fd);
+// 	ft_putnbr_fd(87,fd);
+// 	ft_putchar_fd('\n',fd);
+// 	ft_putnbr_fd(7776,fd);
 // 	ft_putchar_fd('\n',fd);
 // 	ft_putnbr_fd(0,fd);
-// 	ft_putchar_fd('\n',fd);
-// 	ft_putnbr_fd(-42,fd);
+// 	ft_putstr_fd("merhaba",fd);
+// 	ft_putendl_fd("selam",fd);
 // 	close(fd);
 // }

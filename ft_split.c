@@ -6,13 +6,13 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 12:24:09 by adak              #+#    #+#             */
-/*   Updated: 2026/01/25 17:48:55 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/26 13:57:59 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	countword(char const *s, char c)
+static int	count_word(char const *s, char c)
 {
 	int	i;
 	int	nb;
@@ -59,7 +59,7 @@ static char	*ft_strldup(char const *s, char c)
 	return (str);
 }
 
-static char	**freetab(char **tab)
+static char	**free_tab(char **tab)
 {
 	int	i;
 
@@ -80,7 +80,7 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	int		j;
 
-	tab = malloc(sizeof(char *) * (countword(s, c) + 1));
+	tab = malloc(sizeof(char *) * (count_word(s, c) + 1));
 	if (!tab)
 		return (NULL);
 	i = 0;
@@ -93,7 +93,7 @@ char	**ft_split(char const *s, char c)
 		{
 			tab[i] = ft_strldup(s + j, c);
 			if (!tab[i++])
-				return (freetab(tab));
+				return (free_tab(tab));
 			while (s[j] != c && s[j])
 				j++;
 		}
@@ -115,5 +115,5 @@ char	**ft_split(char const *s, char c)
 // 			printf("%s\n",rest[i]);
 // 			i++;
 // 		}
-// 	freetab(rest);
+// 	free_tab(rest);
 // }

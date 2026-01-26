@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 13:19:35 by adak              #+#    #+#             */
-/*   Updated: 2026/01/23 17:15:35 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/26 13:52:52 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,38 +90,4 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 //     ft_lstclear(&ada, free);
 
 //     return (0);
-// }
-
-//ESKI MAIN
-// int main(void)
-// {
-
-// 	t_list	*alper;
-
-// 	//char mahmut[] = "mahmutnerdesin";
-// 	//char mehran[] = "merhaba";
-// 	//char murtaza[] = "bonjour";
-// 	//char bugra[] = "naber";
-// 	//char suha[] = "nasilsin";
-
-// 	alper =ft_lstnew(ft_strdup("mahmutnerdesin"));
-// 	ft_lstadd_back(&alper,ft_lstnew(ft_strdup("merhaba")));
-// 	ft_lstadd_back(&alper,ft_lstnew(ft_strdup("bonjour")));
-// 	ft_lstadd_back(&alper,ft_lstnew(ft_strdup("naber")));
-// 	ft_lstadd_back(&alper,ft_lstnew(ft_strdup("nasilsin")));
-
-// 	//printf("%s\n", (char *)ft_lstlast(alper)->content);
-// 	t_list *ada = ft_lstmap(alper, deneme, free);
-// 	printf("%s\n", (char *)ada->content);
-
-// 	// ada = alper;
-// 	// while(ada)
-// 	// {
-// 	// 	printf("%s\n", (char *)ada->content);
-// 	// 	ada = ada->next;
-// 	// }
-
-// 	//alper = ft_lstmap(alper,deneme,free);
-// 	//printf("%s\n", (char *)ft_lstnew(alper)->content);
-
 // }

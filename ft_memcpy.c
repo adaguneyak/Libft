@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -53,4 +54,16 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 // 	printf("before memcpy : %s\n", dest);
 // 	memcpy(&dest,&src,1);
 // 	printf("before memcpy : %s\n", dest);
+// }
+
+// #include <stdio.h>
+// int main(void)
+// {
+// 	char d[] = "ABCDEEE";
+// 	char d2[] = "ABCDEEE";
+// 	//char s[] = "12345";
+// 	ft_memcpy(d + 3,d , 10);
+// 	ft_memmove(d2 + 3,d2 , 10);
+// 	printf("%s\n",d + 3);
+// 	printf("%s",d2 + 3);
 // }
