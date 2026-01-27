@@ -26,28 +26,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		*lst = temp;
 	}
 }
-
-// #include <stdio.h>
-// int main (void)
-// {
-// 	t_list	*node;
-// 	char *ada;
-// 	char *lou;
-// 	char *huseyin;
-// 	char *bojack;
-
-// 	ada = ft_strdup("merhaba");
-// 	lou = ft_strdup("naber");
-// 	huseyin = ft_strdup("x");
-// 	bojack = ft_strdup("harika");
-
-// 	node = ft_lstnew(ada);
-
-// 	ft_lstadd_back(&node,ft_lstnew(lou));
-// 	ft_lstadd_back(&node,ft_lstnew(huseyin));
-// 	ft_lstadd_back(&node,ft_lstnew(bojack));
-
-// 	ft_lstclear(&node,&free);
-// 	if (node == NULL)
-// 		printf("fonksiyon calisiyor");
-// }

@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 08:39:58 by adak              #+#    #+#             */
-/*   Updated: 2026/01/18 13:06:18 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/27 17:42:13 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	result[len] = '\0';
 	return (result);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-// 	char omer[] = "merhaba";
-// 	char *a;
-// 	printf("benimki : %s\n", a = ft_substr(omer,6,100));
-// 	free(a);
-// }

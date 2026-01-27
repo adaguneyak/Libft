@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 12:24:09 by adak              #+#    #+#             */
-/*   Updated: 2026/01/26 13:57:59 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/27 17:18:46 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,19 +101,3 @@ char	**ft_split(char const *s, char c)
 	tab[i] = NULL;
 	return (tab);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-// 	char **rest;
-// 	char str[] = "          yeter artik husey     in pesimi bi    rak " ;
-// 	int i = 0;
-// 	rest = ft_split(str,' ');
-// 	rest[7]  = NULL;
-// 	while (rest[i])
-// 		{
-// 			printf("%s\n",rest[i]);
-// 			i++;
-// 		}
-// 	free_tab(rest);
-// }

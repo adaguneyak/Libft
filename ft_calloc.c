@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 17:06:49 by adak              #+#    #+#             */
-/*   Updated: 2026/01/26 12:36:40 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/27 15:39:23 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,17 +26,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(ptr, len);
 	return (ptr);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-// 	char *a;
-// 	size_t b = 7;
-// 	a = (char *)ft_calloc(b, sizeof(char));
-// 	while (b)
-// 	{
-// 		printf("%d\n",a[b]);
-// 		b--;
-// 	}	
-// 	free(a);
-// }

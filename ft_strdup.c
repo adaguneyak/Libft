@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 18:44:19 by adak              #+#    #+#             */
-/*   Updated: 2026/01/13 19:06:54 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/27 17:19:11 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,3 @@ char	*ft_strdup(const char *s)
 	result[size] = '\0';
 	return (result);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-// 	char *ada = ft_strdup("merhaba");
-// 	printf("%s", ada);
-// 	free(ada);
-// }

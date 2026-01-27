@@ -38,21 +38,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int main (void)
-// {
-// 	char dest[] = "helloworld";
-// 	char src[] = " ";
-// 	printf("before orjinal memmove : %s\n", dest);
-// 	memmove(dest,src,3);
-// 	printf("%d\n", dest[0]);
-// 	printf("after orjinal memmove : %s\n", dest);
-// 	char dest1[] = "helloworld";
-// 	char src1[] = " ";
-// 	printf("before bizim memmove : %s\n", dest1);
-// 	ft_memmove(dest1,src1,3);
-// 	printf("after bizim memmove : %s\n", dest1);
-// }

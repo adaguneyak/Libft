@@ -16,13 +16,3 @@ int	ft_isdigit(int c)
 {
 	return (c >= 48 && c <= 57);
 }
-
-// #include <stdio.h>
-// int main (void)
-// {
-// 	printf("%d\n", ft_isdigit('a'));
-// 	printf("%d\n", ft_isdigit(' '));
-// 	printf("%d\n", ft_isdigit('1'));
-// 	printf("%d\n", ft_isdigit(97));
-// 	printf("%d\n", ft_isdigit(':'));
-// }

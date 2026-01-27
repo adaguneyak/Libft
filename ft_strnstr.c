@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 12:35:20 by adak              #+#    #+#             */
-/*   Updated: 2026/01/13 15:30:10 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/27 18:46:27 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-// #include <string.h>
-// #include <stdio.h>
-// int main(void)
-// {
-// 	char ada[] = "helloworld";
-// 	char huseyin[] = "alibeykoy";
-// 	printf("benim fonksiyon : %s", ft_strnstr(ada,huseyin,8));
-// }

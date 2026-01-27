@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 22:33:44 by adak              #+#    #+#             */
-/*   Updated: 2026/01/15 13:08:39 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/27 15:46:32 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)(s + i));
 	return (NULL);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int main(void)
-// {
-// 	char str[] = "Hello World";
-// 	printf("Orijinal: %s\n", strchr(str, 'o'));
-// 	printf("Senin:    %s\n", ft_strchr(str, 'o'));
-// 	return (0);
-// }

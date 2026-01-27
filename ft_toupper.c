@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 22:06:42 by adak              #+#    #+#             */
-/*   Updated: 2026/01/10 22:25:39 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/27 17:27:13 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_toupper(int c)
 		return (c -32);
 	return (c);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-// 	printf("%d", ft_toupper('a'));
-// }

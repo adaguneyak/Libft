@@ -28,14 +28,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-// 	int str;
-// 	ft_memset(&str,255,4);
-// 	ft_memset(&str,255,3);
-// 	ft_memset(&str,253,2);
-// 	ft_memset(&str,87568,1);
-// 	printf("%d",str);
-// }

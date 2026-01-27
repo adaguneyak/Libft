@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 12:21:35 by adak              #+#    #+#             */
-/*   Updated: 2026/01/14 14:16:23 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/27 17:22:04 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	result[i] = '\0';
 	return (result);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-// 	char deneme[] = "merhaba";
-// 	char ada[] = "nasilsin";
-// 	printf("%s", ft_strjoin(deneme,ada));
-// }

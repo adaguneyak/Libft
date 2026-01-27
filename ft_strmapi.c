@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 14:17:55 by adak              #+#    #+#             */
-/*   Updated: 2026/01/18 17:01:01 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/27 20:16:51 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,27 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[i] = '\0';
 	return (result);
 }
-
-// #include <stdio.h>
-
-// // Örnek fonksiyon 1: Her karakteri büyük harfe çevirir
-// char to_upper(unsigned int i, char c)
-// {
-//     (void)i; // index kullanmıyoruz
-//     if (c >= 'a' && c <= 'z')
-//         return (c - 32);
-//     return (c);
-// }
-// int main(void)
-// {
-//     char *original = "hello world";
-//     char *result;
-
-//     printf("Original: %s\n", original);
-
-//     // Test 1: Büyük harfe çevirme
-//     result = ft_strmapi(original, to_upper);
-//     printf("To Upper: %s\n", result);
-//     free(result);
-//     return (0);
-// }

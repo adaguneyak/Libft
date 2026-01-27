@@ -19,13 +19,3 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	del(lst->content);
 	free(lst);
 }
-
-// #include <stdio.h>
-// int main (void)
-// {
-// 	t_list *YETER;
-// 	char *lou = ft_strdup("merhaba");
-// 	YETER = ft_lstnew(lou);
-// 	ft_lstdelone(YETER,&free);
-// 	printf("%s", lou);
-// }

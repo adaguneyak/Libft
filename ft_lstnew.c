@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 17:33:54 by adak              #+#    #+#             */
-/*   Updated: 2026/01/25 20:01:32 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/27 19:15:45 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,3 @@ t_list	*ft_lstnew(void *content)
 	nnode->next = NULL;
 	return (nnode);
 }
-
-// #include <stdio.h>
-// int main (void)
-// {
-// 	char lou[] = "merhaba";
-// 	t_list	*ada;
-// 	ada = ft_lstnew(lou);
-// 	printf("%s",(char *) ada->content);
-// 	free(ada);
-// }

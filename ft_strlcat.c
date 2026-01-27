@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 18:09:05 by adak              #+#    #+#             */
-/*   Updated: 2026/01/11 15:16:18 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/27 17:26:47 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,17 +33,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dstlen + i] = '\0';
 	return (dstlen + srclen);
 }
-
-// #include <stdio.h>
-// int	main(void)
-// {
-// 	char	dst[20] = "merhaba";
-// 	char	src[] = "nasilsin";
-// 	size_t	result;
-
-// 	printf("%s\n", dst);
-// 	result = ft_strlcat(dst, src, 4);
-// 	printf("%s\n", dst);
-// 	printf("%zu\n", result);
-// 	return (0);
-// }

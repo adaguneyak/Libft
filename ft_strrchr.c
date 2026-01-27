@@ -6,7 +6,7 @@
 /*   By: adak <adak@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/11 14:48:03 by adak              #+#    #+#             */
-/*   Updated: 2026/01/15 13:09:14 by adak             ###   ########.fr       */
+/*   Updated: 2026/01/27 17:53:27 by adak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,3 @@ char	*ft_strrchr(const char *s, int c)
 		find = (char *)(s + i);
 	return (find);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int main(void)
-// {
-//     char *s = "Hello World";
-//     printf("Orijinal: %s\n", strrchr(s, 'o'));
-//     printf("Benim:    %s\n", ft_strrchr(s, 'o'));
-//     return (0);
-// }
