@@ -298,16 +298,6 @@ This cautious approach ensured the development of:
 
 ---
 
-## Note on This README
-This README was created with AI assistance (Claude) to help organize and present the project documentation in a clear, professional manner. The AI was used for:
-
-- Structuring the documentation layout
-- Formatting technical information
-- Ensuring clarity in explanations
-- Organizing the required sections per 42 subject guidelines
-
----
-
 ## Contact
 
 For questions or discussions about the project:
