@@ -18,7 +18,7 @@
 The library is divided into three main parts:
 1. **Part 1 - Libc Functions**: Reimplementation of standard C library functions
 2. **Part 2 - Additional Functions**: Utility functions for string and memory manipulation
-3. **Part 3 - Bonus (Linked Lists)**: Functions to manipulate linked list structures
+3. **Part 3 - Linked Lists**: Functions to manipulate linked list structures
 
 ---
 
